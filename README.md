@@ -1,3 +1,20 @@
+## This is the script from the start of the video:
+```
+mkdir Minesweeper
+cd Minesweeper
+dotnet new -u Fable.Template.Elmish.React
+dotnet new -i Fable.Template.Elmish.React
+dotnet new fable-elmish-react -lang F#
+git init
+git add -A
+git commit -am "Initial template"
+yarn install
+cd src
+dotnet restore
+code ..
+dotnet fable yarn-start
+```
+
 # Fable.Elmish.React Template
 
 This template can be used to generate a simple web app with [Fable](http://fable.io/) and [Elmish](https://fable-elmish.github.io/).
