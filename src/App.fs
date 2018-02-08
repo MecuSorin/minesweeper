@@ -12,7 +12,8 @@ open View
 
 importAll "../sass/main.sass"
 
-
+open Fable.Helpers.React
+open Fable.Helpers.React.Props
 open Elmish.React
 open Elmish.Debug
 open Elmish.HMR

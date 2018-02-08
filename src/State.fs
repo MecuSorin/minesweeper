@@ -24,7 +24,7 @@ let update msg model =
             | Some Open -> model
             | Some FlaggedMine -> { model with revealed = model.revealed |> Map.remove boxIndex}
             | None -> { model with revealed = model.revealed |> Map.add boxIndex FlaggedMine}
-    match model.gameState with
+    match newModel.gameState with
     | Won -> newModel, Cmd.none
     | Lost _ -> newModel, Cmd.none
     | Running ->
